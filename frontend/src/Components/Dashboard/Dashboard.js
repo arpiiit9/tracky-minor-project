@@ -37,7 +37,7 @@ function Dashboard() {
                             <div className="balance">
                                 <h2>Total Balance</h2>
                                 <p>
-                                    {dollar} {totalBalance()}
+                                    {} {totalBalance()}
                                 </p>
                             </div>
                         </div>
