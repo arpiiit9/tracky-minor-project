@@ -11,9 +11,11 @@ const PORT = process.env.PORT||5000
 //middlewares
 app.use(express.json())
 app.use(cors({
- origin :"https://tracky-minor-project.vercel.app/"
+origin: "*"
 }))
-
+app.get('/',(req,res)=>{
+res.send("its working")
+})
 //routes
 readdirSync('./routes').map((route) => app.use('/api/v1', require('./routes/' + route)))
 
